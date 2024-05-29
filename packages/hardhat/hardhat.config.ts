@@ -21,7 +21,7 @@ const etherscanApiKey = process.env.ETHERSCAN_API_KEY || "DNXJA8RX2Q3VZ4URQIWP7Z
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.17",
+    version: "0.8.19",
     settings: {
       optimizer: {
         enabled: true,
@@ -116,6 +116,10 @@ const config: HardhatUserConfig = {
     },
     pgnTestnet: {
       url: "https://sepolia.publicgoods.network",
+      accounts: [deployerPrivateKey],
+    },
+    avalancheFuji: {
+      url: "https://api.avax-test.network/ext/bc/C/rpc",
       accounts: [deployerPrivateKey],
     },
   },
