@@ -43,10 +43,9 @@ const Home: NextPage = () => {
 
       <div className="mt-10 px-4 flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-5 text-center">Our Process</h2>
-
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          <li>
-            <div className="timeline-middle">
+          <li className="mb-10">
+            <div className="timeline-middle mb-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
                 <path
                   fillRule="evenodd"
@@ -55,15 +54,16 @@ const Home: NextPage = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-start md:text-end mb-10">
-              <div className="text-lg font-black">Deposit your salary into the decentralized pension</div>
-              Your salary is deposited into a smart contract. The process is fully transparent and secure. The
-              porcentage of your salary is converted to blockchain network.
+            <div className="timeline-start md:text-end">
+              <div className="text-lg font-black">Deposit your salary</div>
+              <p>
+                Your salary is deposited into the decentralized pension. The process is fully transparent and secure.
+              </p>
             </div>
-            <hr />
+            <hr className="border-gray-300 my-4" />
           </li>
-          <li>
-            <div className="timeline-middle">
+          <li className="mb-10">
+            <div className="timeline-middle mb-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
                 <path
                   fillRule="evenodd"
@@ -72,14 +72,14 @@ const Home: NextPage = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10">
-              <div className="text-lg font-black">Transfer USDC from Blockchain Network </div>
-              Uses ChainLinks CCIP protocol, ensure transaction security.
+            <div className="timeline-end">
+              <div className="text-lg font-black">The % of your salary is converted to blockchain network.</div>
+              <p>We use ChainLink s CCIP protocol to ensure transaction security.</p>
             </div>
-            <hr />
+            <hr className="border-gray-300 my-4" />
           </li>
-          <li>
-            <div className="timeline-middle">
+          <li className="mb-10">
+            <div className="timeline-middle mb-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
                 <path
                   fillRule="evenodd"
@@ -88,14 +88,23 @@ const Home: NextPage = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-start md:text-end mb-10">
-              <div className="text-lg font-black">Fragmentation of your pension</div>
-              Fees and Allocation: 5% goes to administrative fees, 10% is reserved for future gas fees, 25% goes to
-              staking, 25% is invested in SP 500 index funds, 25% is used for generating loans, and 10% remains
-              available for you to use anytime. All processes are fully transparent and traceable. Adheres to high
-              security standards to protect your funds.
+            <div className="timeline-start md:text-end">
+              <div className="text-lg font-black">Fragmentation of your savings</div>
+              <p>Your savings are fragmented and allocated as follows:</p>
+              <ul className="list-disc list-inside ml-4">
+                <li>5% goes to administrative fees</li>
+                <li>10% is reserved for future gas fees</li>
+                <li>25% goes to staking</li>
+                <li>25% is invested in SP 500 index funds</li>
+                <li>25% is used for generating loans</li>
+                <li>10% remains available for you to use anytime</li>
+              </ul>
+              <p className="text-lg font-black">
+                All processes are fully transparent and traceable. Adheres to high security standards to protect your
+                funds.
+              </p>
             </div>
-            <hr />
+            <hr className="border-gray-300 my-4" />
           </li>
         </ul>
       </div>
