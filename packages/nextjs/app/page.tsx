@@ -24,7 +24,7 @@ const Home: NextPage = () => {
               <p className="font-medium">Connected Address:</p>
               <Address address={connectedAddress} />
             </div>
-            <Link href="/debug" passHref>
+            <Link href="/register" passHref>
               <button className="btn btn-primary mb-5">Get Started</button>
             </Link>
           </div>
