@@ -57,8 +57,8 @@ const Home: NextPage = () => {
             </div>
             <div className="timeline-start md:text-end mb-10">
               <div className="text-lg font-black">Deposit your salary into the decentralized pension</div>
-              Your salary is deposited into a smart contract. The process is fully transparent and secure. Salary is
-              converted to USDC on the Fuji network.
+              Your salary is deposited into a smart contract. The process is fully transparent and secure. The
+              porcentage of your salary is converted to blockchain network.
             </div>
             <hr />
           </li>
@@ -73,9 +73,8 @@ const Home: NextPage = () => {
               </svg>
             </div>
             <div className="timeline-end mb-10">
-              <div className="text-lg font-black">Transfer USDC from Fuji to Sepolia</div>
-              USDC is transferred from the Fuji network to the Sepolia network. Uses ChainLinks CCIP protocol. ChainLink
-              nodes ensure transaction security.
+              <div className="text-lg font-black">Transfer USDC from Blockchain Network </div>
+              Uses ChainLinks CCIP protocol, ensure transaction security.
             </div>
             <hr />
           </li>
