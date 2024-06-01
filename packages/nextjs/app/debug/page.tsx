@@ -11,7 +11,7 @@ const Debug: NextPage = () => {
       {/* Fondo de imagen */}
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <Image
-          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGt2OXNiOXpiMHB0cmF1dDBkeGhkc29mbXdhNDVva2Ezdjl4MTAxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KGkKyQAOU4U8DltXCD/giphy.webp"
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJteDNiM3h4MHc4NDZ3bTZzd3kzYWlrNGNrcGNlbngzcDE1ZWxqcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vR9AY7Wjee8T9As/giphy.webp"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
