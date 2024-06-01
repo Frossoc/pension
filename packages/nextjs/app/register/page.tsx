@@ -40,7 +40,9 @@ const LoginRegister: NextPage = () => {
               <input type="password" placeholder="password" className="input input-bordered" required />
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Register</button>
+              <a href="/debug" className="btn btn-primary">
+                Register
+              </a>
             </div>
           </form>
         </div>
@@ -67,7 +69,9 @@ const LoginRegister: NextPage = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <a href="/debug" className="btn btn-primary">
+                Login
+              </a>
             </div>
           </form>
         </div>
