@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       >
         <div className="hero-content text-center text-white">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Empower your Future, Decentralized Pension</h1>
+            <h1 className="mb-5 text-5xl font-bold">Empower your Future, PensionVerse</h1>
             <div className="mb-5">
               <p className="font-medium">Connected Address:</p>
               <Address address={connectedAddress} />
