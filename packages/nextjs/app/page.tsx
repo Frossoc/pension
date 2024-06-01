@@ -3,7 +3,6 @@
 import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
-import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
 
 const Home: NextPage = () => {
@@ -32,29 +31,74 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
-        <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-          <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-            <BugAntIcon className="h-8 w-8 fill-secondary" />
-            <p>
-              Tinker with your smart contract using the{" "}
-              <Link href="/debug" passHref className="link">
-                Debug Contracts
-              </Link>{" "}
-              tab.
-            </p>
-          </div>
-          <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-            <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
-            <p>
-              Explore your local transactions with the{" "}
-              <Link href="/blockexplorer" passHref className="link">
-                Block Explorer
-              </Link>{" "}
-              tab.
-            </p>
-          </div>
-        </div>
+      <div className="mt-10 px-4 flex flex-col items-center">
+        <h2 className="text-3xl font-bold mb-5 text-center">How it works?</h2>
+        <ul className="steps mb-10">
+          <li className="step step-primary">Register</li>
+          <li className="step step-primary">Choose plan</li>
+          <li className="step">Follow each process</li>
+          <li className="step">Manage your pension in a transparent and secure way</li>
+        </ul>
+      </div>
+
+      <div className="mt-10 px-4 flex flex-col items-center">
+        <h2 className="text-3xl font-bold mb-5 text-center">Our Process</h2>
+
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li>
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-start md:text-end mb-10">
+              <div className="text-lg font-black">Deposit your salary into the decentralized pension</div>
+              Your salary is deposited into a smart contract. The process is fully transparent and secure. Salary is
+              converted to USDC on the Fuji network.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-end mb-10">
+              <div className="text-lg font-black">Transfer USDC from Fuji to Sepolia</div>
+              USDC is transferred from the Fuji network to the Sepolia network. Uses ChainLinks CCIP protocol. ChainLink
+              nodes ensure transaction security.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-start md:text-end mb-10">
+              <div className="text-lg font-black">Fragmentation of your pension</div>
+              Fees and Allocation: 5% goes to administrative fees, 10% is reserved for future gas fees, 25% goes to
+              staking, 25% is invested in SP 500 index funds, 25% is used for generating loans, and 10% remains
+              available for you to use anytime. All processes are fully transparent and traceable. Adheres to high
+              security standards to protect your funds.
+            </div>
+            <hr />
+          </li>
+        </ul>
       </div>
     </>
   );
