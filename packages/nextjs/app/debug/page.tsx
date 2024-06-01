@@ -1,6 +1,9 @@
+import Image from "next/image";
 import { DebugContracts } from "./_components/DebugContracts";
 import type { NextPage } from "next";
 import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
+
+// Importa el componente Image
 
 export const metadata = getMetadata({
   title: "Debug Contracts",
@@ -27,9 +30,9 @@ const Debug: NextPage = () => {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Total Likes</div>
-          <div className="stat-value text-primary">25.6K</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-title">Compound interest</div>
+          <div className="stat-value text-primary">11K</div>
+          <div className="stat-desc">15% more than last month</div>
         </div>
         <div className="stat">
           <div className="stat-figure text-secondary">
@@ -42,32 +45,30 @@ const Debug: NextPage = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
-          <div className="stat-title">Page Views</div>
-          <div className="stat-value text-secondary">2.6M</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-title">Pool Accumulation</div>
+          <div className="stat-value text-secondary">10K</div>
+          <div className="stat-desc">11% more than last month</div>
         </div>
         <div className="stat">
           <div className="stat-figure text-secondary">
             <div className="avatar online">
               <div className="w-16 rounded-full">
-                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <Image
+                  src="https://cdn.pixabay.com/photo/2019/12/28/02/16/senior-4723737_1280.jpg"
+                  alt="Profile picture"
+                  width={64} // Ajusta el tamaño según sea necesario
+                  height={64} // Ajusta el tamaño según sea necesario
+                />
               </div>
             </div>
           </div>
-          <div className="stat-value">86%</div>
-          <div className="stat-title">Tasks done</div>
-          <div className="stat-desc text-secondary">31 tasks remaining</div>
+          <div className="stat-value">60%</div>
+          <div className="stat-title">Goals</div>
+          <div className="stat-desc text-secondary">Next year&apos;s goal</div>
         </div>
       </div>
 
       <div className="stats bg-primary text-primary-content">
-        <div className="stat">
-          <div className="stat-title">Account balance</div>
-          <div className="stat-value">$89,400</div>
-          <div className="stat-actions">
-            <button className="btn btn-sm btn-success">Add funds</button>
-          </div>
-        </div>
         <div className="stat">
           <div className="stat-title">Current balance</div>
           <div className="stat-value">$89,400</div>
@@ -79,11 +80,11 @@ const Debug: NextPage = () => {
       </div>
 
       <ul className="steps">
-        <li className="step step-info">Fly to moon</li>
-        <li className="step step-info">Shrink the moon</li>
-        <li className="step step-info">Grab the moon</li>
+        <li className="step step-info">25% goes to staking</li>
+        <li className="step step-info">25% is invested</li>
+        <li className="step step-info">25% is used for generating loans</li>
         <li className="step step-error" data-content="?">
-          Sit on toilet
+          10% remains available for you to use anytime
         </li>
       </ul>
 
